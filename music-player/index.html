@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font linki buraya konuldu [fontawesome] (butonlar için) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <!-- style burada aktarılıyıor -->
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <h1 id="baslik">Music Player</h1>
+    <!-- music baslatmayi içinde tutsun diye -->
+    <div class="music-container">
+        <!-- music bilgisi div -->
+        <div class="music-info">
+            <!-- müzik başlığı için -->
+            <h4 id="title">Farazi</h4>
+            <div class="progress-container">
+                <div class="progress">
+
+                </div>
+            </div>
+        </div>
+        <!-- sonradan JS ile değişseceğimiz audio kısmı -->
+        <audio src="music/rahatBirakbeni.mp3" id="audio"></audio>
+        <div class="img-container">
+            <img src="images/rahatBirakbeni.png" alt="music-cover" id="cover">
+        </div>
+        <!-- müzik butanlarının navi -->
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>
+    <!-- javascript dosyaları burada tanımlanıyor -->
+    <script src="script.js"></script>
+</body>
+</html>
