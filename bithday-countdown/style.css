@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.coming-soon{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /*horizantal yerine vertical yaptık*/
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+.day,
+.hour,
+.minute,
+.second{
+    font-size: 3rem;
+}
+
+.waiting{
+    height: 70vh;
+}
