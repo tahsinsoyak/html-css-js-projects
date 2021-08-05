@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pepsi</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="./images/logo.png" class="logo" alt=""></a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I like</sap></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem doloribus et beatae delectus, quod vitae eaque voluptatibus quisquam ipsum dolorem quam quas maxime cumque optio pariatur? Architecto omnis voluptatibus repudiandae.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/pepsi001.png" class="pepsi" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./images/pepsi001.png" onclick="imgSlider('/images/pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="./images/pepsi002.png" onclick="imgSlider('/images/pepsi002.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="./images/pepsi003.png" onclick="imgSlider('/images/pepsi003.png');changeBgColor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="/images/facebook.png"></a></li>
+            <li><a href="#"><img src="/images/twitter.png"></a></li>
+            <li><a href="#"><img src="/images/instagram.png"></a></li>
+        </ul>
+    </section>
+    <!-- js içine yazıyoruz -->
+    <script type="text/javascript">
+        //resim değişmesi için
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        //arka plan rengi degismesi için
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+        //menu için
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
