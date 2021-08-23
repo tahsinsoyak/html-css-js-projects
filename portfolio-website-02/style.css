@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: rgb(171,24,54);
+    background: linear-gradient(90deg, rgba(171,24,54,1) 10%, rgba(0,212,255,1) 100%);
+
+}
+
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.logo:hover{
+    color: #000;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+}
+
+.navbar a:hover{
+    color: #000;
+}
+
+.content{
+    width: 100px;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.content h1{
+    color: #fff;
+    font-size: 100px;
+    letter-spacing: 30px;
+    text-shadow: 0 20px 25px rgba(0,0,0,0.5);
+}
+
+h2{
+    position: absolute;
+    top: 70%;
+    left: 150px;
+    font-size: 20px;
+    letter-spacing: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 20px 25px rgba(0,0,0,0.5);
+}
+
+p{
+    position: absolute;
+    top: 60%;
+    left: 65px;
+    font-size: 30px;
+    letter-spacing: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 20px 25px rgba(0,0,0,0.5);
+}
+
+span{
+    position: relative;
+    top: -80px;
+    color: #fff;
+    font-size: 50px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+image img{
+    height: 100%;
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.social{
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 10%;
+    top: 70%;
+}
+
+.social a{
+    font-size: 30px;
+    color: #fff;
+    margin-right: 20px;
+}
